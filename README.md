@@ -1,16 +1,27 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**waters1ze/waters1ze** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi there, I'm waters1ze 👋
 
-Here are some ideas to get you started:
+**Systems Programmer & Creator of the [Datara Programming Language](https://github.com/datara-lang)**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <a href="https://github.com/datara-lang/datara"><img src="https://img.shields.io/badge/Language-Datara-E3B341?style=for-the-badge&logo=codeforces&logoColor=white" alt="Datara" /></a>
+  <a href="https://github.com/datara-lang"><img src="https://img.shields.io/badge/Organization-datara--lang-181717?style=for-the-badge&logo=github&logoColor=white" alt="Org" /></a>
+</p>
+
+</div>
+
+---
+
+### 🚀 About Me
+- 🛠 Creator & Lead Architect of **Datara** (`.dtr`), a high-performance compiled systems language.
+- ⚡ Focused on deterministic execution, affine ownership, zero runtime GC pauses, and Cranelift/LLVM compilation.
+- 📦 Maintaining the **[Sparks](https://github.com/datara-lang/sparks)** package registry and language tooling.
+
+### 💻 Technologies & Interests
+`Datara` • `Rust` • `C++` • `LLVM` • `Cranelift` • `WebAssembly` • `Systems Architecture`
+
+---
+<div align="center">
+  <sub>Building deterministic, high-velocity infrastructure for the modern era.</sub>
+</div>
