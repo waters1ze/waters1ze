@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 350" width="100%" height="350">
+  <defs>
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+
+      /* Command: 'datara info' typing */
+      @keyframes typeCmdD { 0%, 3.5% { opacity: 0; } 4.2%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdA1 { 0%, 4.3% { opacity: 0; } 5.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdT { 0%, 5.1% { opacity: 0; } 5.8%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdA2 { 0%, 5.9% { opacity: 0; } 6.6%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdR { 0%, 6.7% { opacity: 0; } 7.4%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdA3 { 0%, 7.5% { opacity: 0; } 8.2%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdSp { 0%, 8.3% { opacity: 0; } 9.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdI { 0%, 9.1% { opacity: 0; } 9.8%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdN { 0%, 9.9% { opacity: 0; } 10.6%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdF { 0%, 10.7% { opacity: 0; } 11.4%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes typeCmdO { 0%, 11.5% { opacity: 0; } 12.2%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+
+      @keyframes topCurPre {
+        0%, 3.0% { opacity: 1; }
+        3.5%, 12.2% { opacity: 0; }
+        12.3%, 83.0% { opacity: 0; }
+        83.1%, 100% { opacity: 0; }
+      }
+
+
+      @keyframes p1_1 { 0%, 12.8% { opacity: 0; } 12.9%, 14.0% { opacity: 1; } 14.1%, 100% { opacity: 0; } }
+      @keyframes p1_2 { 0%, 14.0% { opacity: 0; } 14.1%, 15.1% { opacity: 1; } 15.2%, 100% { opacity: 0; } }
+      @keyframes p1_3 { 0%, 15.1% { opacity: 0; } 15.2%, 16.2% { opacity: 1; } 16.4%, 100% { opacity: 0; } }
+      @keyframes p1_4 { 0%, 16.2% { opacity: 0; } 16.4%, 17.4% { opacity: 1; } 17.5%, 100% { opacity: 0; } }
+      @keyframes p1_5 { 0%, 17.4% { opacity: 0; } 17.5%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar1 { 0%, 12.8% { width: 0px; } 17.5%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line1 { 0%, 12.8% { opacity: 0; } 12.9%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p2_1 { 0%, 17.4% { opacity: 0; } 17.5%, 18.5% { opacity: 1; } 18.6%, 100% { opacity: 0; } }
+      @keyframes p2_2 { 0%, 18.5% { opacity: 0; } 18.6%, 19.7% { opacity: 1; } 19.8%, 100% { opacity: 0; } }
+      @keyframes p2_3 { 0%, 19.7% { opacity: 0; } 19.8%, 20.8% { opacity: 1; } 20.9%, 100% { opacity: 0; } }
+      @keyframes p2_4 { 0%, 20.8% { opacity: 0; } 20.9%, 22.0% { opacity: 1; } 22.1%, 100% { opacity: 0; } }
+      @keyframes p2_5 { 0%, 22.0% { opacity: 0; } 22.1%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar2 { 0%, 17.4% { width: 0px; } 22.1%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line2 { 0%, 17.4% { opacity: 0; } 17.5%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p3_1 { 0%, 22.0% { opacity: 0; } 22.1%, 23.1% { opacity: 1; } 23.2%, 100% { opacity: 0; } }
+      @keyframes p3_2 { 0%, 23.1% { opacity: 0; } 23.2%, 24.3% { opacity: 1; } 24.4%, 100% { opacity: 0; } }
+      @keyframes p3_3 { 0%, 24.3% { opacity: 0; } 24.4%, 25.4% { opacity: 1; } 25.5%, 100% { opacity: 0; } }
+      @keyframes p3_4 { 0%, 25.4% { opacity: 0; } 25.5%, 26.6% { opacity: 1; } 26.7%, 100% { opacity: 0; } }
+      @keyframes p3_5 { 0%, 26.6% { opacity: 0; } 26.7%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar3 { 0%, 22.0% { width: 0px; } 26.7%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line3 { 0%, 22.0% { opacity: 0; } 22.1%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p4_1 { 0%, 26.6% { opacity: 0; } 26.7%, 27.8% { opacity: 1; } 27.9%, 100% { opacity: 0; } }
+      @keyframes p4_2 { 0%, 27.8% { opacity: 0; } 27.9%, 28.9% { opacity: 1; } 29.0%, 100% { opacity: 0; } }
+      @keyframes p4_3 { 0%, 28.9% { opacity: 0; } 29.0%, 30.0% { opacity: 1; } 30.1%, 100% { opacity: 0; } }
+      @keyframes p4_4 { 0%, 30.0% { opacity: 0; } 30.1%, 31.2% { opacity: 1; } 31.3%, 100% { opacity: 0; } }
+      @keyframes p4_5 { 0%, 31.2% { opacity: 0; } 31.3%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar4 { 0%, 26.6% { width: 0px; } 31.3%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line4 { 0%, 26.6% { opacity: 0; } 26.7%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p5_1 { 0%, 31.2% { opacity: 0; } 31.3%, 32.4% { opacity: 1; } 32.5%, 100% { opacity: 0; } }
+      @keyframes p5_2 { 0%, 32.4% { opacity: 0; } 32.5%, 33.5% { opacity: 1; } 33.6%, 100% { opacity: 0; } }
+      @keyframes p5_3 { 0%, 33.5% { opacity: 0; } 33.6%, 34.6% { opacity: 1; } 34.8%, 100% { opacity: 0; } }
+      @keyframes p5_4 { 0%, 34.6% { opacity: 0; } 34.8%, 35.8% { opacity: 1; } 35.9%, 100% { opacity: 0; } }
+      @keyframes p5_5 { 0%, 35.8% { opacity: 0; } 35.9%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar5 { 0%, 31.2% { width: 0px; } 35.9%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line5 { 0%, 31.2% { opacity: 0; } 31.3%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p6_1 { 0%, 35.8% { opacity: 0; } 35.9%, 36.9% { opacity: 1; } 37.0%, 100% { opacity: 0; } }
+      @keyframes p6_2 { 0%, 36.9% { opacity: 0; } 37.0%, 38.1% { opacity: 1; } 38.2%, 100% { opacity: 0; } }
+      @keyframes p6_3 { 0%, 38.1% { opacity: 0; } 38.2%, 39.2% { opacity: 1; } 39.3%, 100% { opacity: 0; } }
+      @keyframes p6_4 { 0%, 39.2% { opacity: 0; } 39.3%, 40.4% { opacity: 1; } 40.5%, 100% { opacity: 0; } }
+      @keyframes p6_5 { 0%, 40.4% { opacity: 0; } 40.5%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar6 { 0%, 35.8% { width: 0px; } 40.5%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line6 { 0%, 35.8% { opacity: 0; } 35.9%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+      @keyframes p7_1 { 0%, 40.4% { opacity: 0; } 40.5%, 41.5% { opacity: 1; } 41.6%, 100% { opacity: 0; } }
+      @keyframes p7_2 { 0%, 41.5% { opacity: 0; } 41.6%, 42.7% { opacity: 1; } 42.8%, 100% { opacity: 0; } }
+      @keyframes p7_3 { 0%, 42.7% { opacity: 0; } 42.8%, 43.8% { opacity: 1; } 43.9%, 100% { opacity: 0; } }
+      @keyframes p7_4 { 0%, 43.8% { opacity: 0; } 43.9%, 45.0% { opacity: 1; } 45.1%, 100% { opacity: 0; } }
+      @keyframes p7_5 { 0%, 45.0% { opacity: 0; } 45.1%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes bar7 { 0%, 40.4% { width: 0px; } 45.1%, 83.0% { width: 130px; } 83.1%, 100% { width: 0px; } }
+      @keyframes line7 { 0%, 40.4% { opacity: 0; } 40.5%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+        
+
+      /* Bottom prompt appearance */
+      @keyframes bottomPrompt {
+        0%, 58.0% { opacity: 0; }
+        59.0%, 83.0% { opacity: 1; }
+        83.1%, 100% { opacity: 0; }
+      }
+
+      /* Typing 'clear' letter by letter */
+      @keyframes letterC { 0%, 63.0% { opacity: 0; } 64.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes letterL { 0%, 66.0% { opacity: 0; } 67.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes letterE { 0%, 69.0% { opacity: 0; } 70.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes letterA { 0%, 72.0% { opacity: 0; } 73.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+      @keyframes letterR { 0%, 75.0% { opacity: 0; } 76.0%, 83.0% { opacity: 1; } 83.1%, 100% { opacity: 0; } }
+
+      /* Bottom prompt cursors */
+      @keyframes curBottomPre {
+        0%, 58.0% { opacity: 0; }
+        59.0%, 62.5% { opacity: 1; }
+        63.0%, 100% { opacity: 0; }
+      }
+      @keyframes curBottomPost {
+        0%, 75.5% { opacity: 0; }
+        76.0%, 83.0% { opacity: 1; }
+        83.1%, 100% { opacity: 0; }
+      }
+
+      /* Cleared Screen (Reset): empty prompt at top */
+      @keyframes clearedScreen {
+        0%, 83.0% { opacity: 0; }
+        83.5%, 98.0% { opacity: 1; }
+        99.0%, 100% { opacity: 0; }
+      }
+
+      .term-font {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 12.5px;
+        letter-spacing: 0.15px;
+      }
+      .blink { animation: blink 0.7s infinite; }
+
+      .cd { animation: typeCmdD 14s infinite; }
+      .ca1 { animation: typeCmdA1 14s infinite; }
+      .ct { animation: typeCmdT 14s infinite; }
+      .ca2 { animation: typeCmdA2 14s infinite; }
+      .cr { animation: typeCmdR 14s infinite; }
+      .ca3 { animation: typeCmdA3 14s infinite; }
+      .csp { animation: typeCmdSp 14s infinite; }
+      .ci { animation: typeCmdI 14s infinite; }
+      .cn { animation: typeCmdN 14s infinite; }
+      .cf { animation: typeCmdF 14s infinite; }
+      .co { animation: typeCmdO 14s infinite; }
+
+      .cur-top-pre { animation: topCurPre 14s infinite; }
+
+
+      .l1 { animation: line1 14s infinite; }
+      .pb1 { animation: bar1 14s infinite ease-out; }
+      .p1-1 { animation: p1_1 14s infinite; }
+      .p1-2 { animation: p1_2 14s infinite; }
+      .p1-3 { animation: p1_3 14s infinite; }
+      .p1-4 { animation: p1_4 14s infinite; }
+      .p1-5 { animation: p1_5 14s infinite; }
+      .l2 { animation: line2 14s infinite; }
+      .pb2 { animation: bar2 14s infinite ease-out; }
+      .p2-1 { animation: p2_1 14s infinite; }
+      .p2-2 { animation: p2_2 14s infinite; }
+      .p2-3 { animation: p2_3 14s infinite; }
+      .p2-4 { animation: p2_4 14s infinite; }
+      .p2-5 { animation: p2_5 14s infinite; }
+      .l3 { animation: line3 14s infinite; }
+      .pb3 { animation: bar3 14s infinite ease-out; }
+      .p3-1 { animation: p3_1 14s infinite; }
+      .p3-2 { animation: p3_2 14s infinite; }
+      .p3-3 { animation: p3_3 14s infinite; }
+      .p3-4 { animation: p3_4 14s infinite; }
+      .p3-5 { animation: p3_5 14s infinite; }
+      .l4 { animation: line4 14s infinite; }
+      .pb4 { animation: bar4 14s infinite ease-out; }
+      .p4-1 { animation: p4_1 14s infinite; }
+      .p4-2 { animation: p4_2 14s infinite; }
+      .p4-3 { animation: p4_3 14s infinite; }
+      .p4-4 { animation: p4_4 14s infinite; }
+      .p4-5 { animation: p4_5 14s infinite; }
+      .l5 { animation: line5 14s infinite; }
+      .pb5 { animation: bar5 14s infinite ease-out; }
+      .p5-1 { animation: p5_1 14s infinite; }
+      .p5-2 { animation: p5_2 14s infinite; }
+      .p5-3 { animation: p5_3 14s infinite; }
+      .p5-4 { animation: p5_4 14s infinite; }
+      .p5-5 { animation: p5_5 14s infinite; }
+      .l6 { animation: line6 14s infinite; }
+      .pb6 { animation: bar6 14s infinite ease-out; }
+      .p6-1 { animation: p6_1 14s infinite; }
+      .p6-2 { animation: p6_2 14s infinite; }
+      .p6-3 { animation: p6_3 14s infinite; }
+      .p6-4 { animation: p6_4 14s infinite; }
+      .p6-5 { animation: p6_5 14s infinite; }
+      .l7 { animation: line7 14s infinite; }
+      .pb7 { animation: bar7 14s infinite ease-out; }
+      .p7-1 { animation: p7_1 14s infinite; }
+      .p7-2 { animation: p7_2 14s infinite; }
+      .p7-3 { animation: p7_3 14s infinite; }
+      .p7-4 { animation: p7_4 14s infinite; }
+      .p7-5 { animation: p7_5 14s infinite; }
+
+      .bot-prompt { animation: bottomPrompt 14s infinite; }
+      .c-c { animation: letterC 14s infinite; }
+      .c-l { animation: letterL 14s infinite; }
+      .c-e { animation: letterE 14s infinite; }
+      .c-a { animation: letterA 14s infinite; }
+      .c-r { animation: letterR 14s infinite; }
+
+      .cur-bot-pre { animation: curBottomPre 14s infinite; }
+      .cur-bot-post { animation: curBottomPost 14s infinite; }
+      .cleared { animation: clearedScreen 14s infinite; }
+
+      .pct-counting { fill: #7d8590; font-size: 11.5px; font-weight: 500; }
+      .pct-done { fill: #57ab5a; font-size: 11.5px; font-weight: 700; }
+    </style>
+
+    <!-- Austere borders and gradients -->
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30363d" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#21262d" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#161b22" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subdued, austere progress bar fills -->
+    <linearGradient id="barGradAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9e6a03" />
+      <stop offset="100%" stop-color="#d29922" />
+    </linearGradient>
+    <linearGradient id="barGradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#58a6ff" />
+    </linearGradient>
+    <linearGradient id="barGradGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#238636" />
+      <stop offset="100%" stop-color="#3fb950" />
+    </linearGradient>
+    <linearGradient id="barGradSlate" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e7681" />
+      <stop offset="100%" stop-color="#8b949e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal Window Background (Deep Graphite) -->
+  <rect x="2" y="2" width="846" height="346" rx="10" fill="#0d1117" stroke="url(#termBorder)" stroke-width="1.2" />
+
+  <!-- Window Header Bar (Clean Minimal Slate) -->
+  <path d="M 2 12 Q 2 2 12 2 L 838 2 Q 848 2 848 12 L 848 36 L 2 36 Z" fill="#161b22" />
+  <line x1="2" y1="36" x2="848" y2="36" stroke="#21262d" stroke-width="1" />
+
+  <!-- Subdued Traffic Lights -->
+  <circle cx="24" cy="19" r="5" fill="#f85149" fill-opacity="0.8" />
+  <circle cx="40" cy="19" r="5" fill="#d29922" fill-opacity="0.8" />
+  <circle cx="56" cy="19" r="5" fill="#3fb950" fill-opacity="0.8" />
+
+  <!-- Window Title (Restrained Gray) -->
+  <text x="425" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7d8590">
+    waters1ze@compiler: ~ (Datara v1.0.0)
+  </text>
+
+  <!-- Terminal Content -->
+  <g transform="translate(26, 66)" class="term-font">
+
+    <!-- Active Session: Top Command Line -->
+    <g>
+      <text x="0" y="0">
+        <tspan fill="#57ab5a" font-weight="600">waters1ze@compiler</tspan><tspan fill="#6e7681">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#c9d1d9">$ </tspan>
+        <tspan fill="#e6edf3" class="cd">d</tspan><tspan fill="#e6edf3" class="ca1">a</tspan><tspan fill="#e6edf3" class="ct">t</tspan><tspan fill="#e6edf3" class="ca2">a</tspan><tspan fill="#e6edf3" class="cr">r</tspan><tspan fill="#e6edf3" class="ca3">a</tspan><tspan fill="#e6edf3" class="csp"> </tspan><tspan fill="#d29922" font-weight="500" class="ci">i</tspan><tspan fill="#d29922" font-weight="500" class="cn">n</tspan><tspan fill="#d29922" font-weight="500" class="cf">f</tspan><tspan fill="#d29922" font-weight="500" class="co">o</tspan>
+      </text>
+      <g class="cur-top-pre">
+        <rect x="152" y="-12" width="7.5" height="15" fill="#d29922" class="blink" />
+      </g>
+    </g>
+
+    <!-- Row 1: System Architect -->
+    <g class="l1" transform="translate(0, 26)">
+      <text x="0" y="0" fill="#d29922" font-weight="600">[ARCH]</text>
+      <text x="68" y="0" fill="#7d8590">waters1ze</text>
+      <!-- Bar Track -->
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradAmber)" class="pb1" />
+      <!-- Animated Percentages -->
+      <text x="345" y="0" text-anchor="end" class="p1-1 pct-counting">18%</text>
+      <text x="345" y="0" text-anchor="end" class="p1-2 pct-counting">46%</text>
+      <text x="345" y="0" text-anchor="end" class="p1-3 pct-counting">78%</text>
+      <text x="345" y="0" text-anchor="end" class="p1-4 pct-counting">94%</text>
+      <text x="345" y="0" text-anchor="end" class="p1-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">Systems &amp; Compiler Architect</text>
+    </g>
+
+    <!-- Row 2: Datara Language v1.0.0 -->
+    <g class="l2" transform="translate(0, 52)">
+      <text x="0" y="0" fill="#d29922" font-weight="600">[LANG]</text>
+      <text x="68" y="0" fill="#7d8590">Datara v1.0.0</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradAmber)" class="pb2" />
+      <text x="345" y="0" text-anchor="end" class="p2-1 pct-counting">14%</text>
+      <text x="345" y="0" text-anchor="end" class="p2-2 pct-counting">39%</text>
+      <text x="345" y="0" text-anchor="end" class="p2-3 pct-counting">68%</text>
+      <text x="345" y="0" text-anchor="end" class="p2-4 pct-counting">88%</text>
+      <text x="345" y="0" text-anchor="end" class="p2-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0">
+        <tspan fill="#e6edf3">Deterministic (.dtr)</tspan>
+        <tspan fill="#6e7681"> &#8226; </tspan>
+        <tspan fill="#8b949e">Zero-GC</tspan>
+      </text>
+    </g>
+
+    <!-- Row 3: Affine Ownership Model -->
+    <g class="l3" transform="translate(0, 78)">
+      <text x="0" y="0" fill="#d29922" font-weight="600">[MEM]</text>
+      <text x="68" y="0" fill="#7d8590">Affine Model</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradAmber)" class="pb3" />
+      <text x="345" y="0" text-anchor="end" class="p3-1 pct-counting">22%</text>
+      <text x="345" y="0" text-anchor="end" class="p3-2 pct-counting">51%</text>
+      <text x="345" y="0" text-anchor="end" class="p3-3 pct-counting">74%</text>
+      <text x="345" y="0" text-anchor="end" class="p3-4 pct-counting">91%</text>
+      <text x="345" y="0" text-anchor="end" class="p3-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">Compile-time Lifetimes &amp; Safety</text>
+    </g>
+
+    <!-- Row 4: Cranelift JIT -->
+    <g class="l4" transform="translate(0, 104)">
+      <text x="0" y="0" fill="#58a6ff" font-weight="600">[JIT]</text>
+      <text x="68" y="0" fill="#7d8590">Cranelift</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradBlue)" class="pb4" />
+      <text x="345" y="0" text-anchor="end" class="p4-1 pct-counting">16%</text>
+      <text x="345" y="0" text-anchor="end" class="p4-2 pct-counting">44%</text>
+      <text x="345" y="0" text-anchor="end" class="p4-3 pct-counting">72%</text>
+      <text x="345" y="0" text-anchor="end" class="p4-4 pct-counting">93%</text>
+      <text x="345" y="0" text-anchor="end" class="p4-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">Sub-30ms Hot Loop Feedback</text>
+    </g>
+
+    <!-- Row 5: LLVM 18 AOT -->
+    <g class="l5" transform="translate(0, 130)">
+      <text x="0" y="0" fill="#58a6ff" font-weight="600">[AOT]</text>
+      <text x="68" y="0" fill="#7d8590">LLVM 18</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradBlue)" class="pb5" />
+      <text x="345" y="0" text-anchor="end" class="p5-1 pct-counting">19%</text>
+      <text x="345" y="0" text-anchor="end" class="p5-2 pct-counting">48%</text>
+      <text x="345" y="0" text-anchor="end" class="p5-3 pct-counting">75%</text>
+      <text x="345" y="0" text-anchor="end" class="p5-4 pct-counting">90%</text>
+      <text x="345" y="0" text-anchor="end" class="p5-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">-O3 Vectorization &#8226; LTO &#8226; WASM</text>
+    </g>
+
+    <!-- Row 6: SSA DMIR Proofs -->
+    <g class="l6" transform="translate(0, 156)">
+      <text x="0" y="0" fill="#3fb950" font-weight="600">[IR]</text>
+      <text x="68" y="0" fill="#7d8590">SSA DMIR</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradGreen)" class="pb6" />
+      <text x="345" y="0" text-anchor="end" class="p6-1 pct-counting">15%</text>
+      <text x="345" y="0" text-anchor="end" class="p6-2 pct-counting">42%</text>
+      <text x="345" y="0" text-anchor="end" class="p6-3 pct-counting">70%</text>
+      <text x="345" y="0" text-anchor="end" class="p6-4 pct-counting">89%</text>
+      <text x="345" y="0" text-anchor="end" class="p6-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">BCE &#8226; SROA &#8226; Mem2Reg [OK]</text>
+    </g>
+
+    <!-- Row 7: Tech Stack -->
+    <g class="l7" transform="translate(0, 182)">
+      <text x="0" y="0" fill="#8b949e" font-weight="600">[STACK]</text>
+      <text x="68" y="0" fill="#7d8590">Core Tools</text>
+      <rect x="175" y="-9" width="130" height="6" rx="3" fill="#21262d" />
+      <rect x="175" y="-9" width="0" height="6" rx="3" fill="url(#barGradSlate)" class="pb7" />
+      <text x="345" y="0" text-anchor="end" class="p7-1 pct-counting">20%</text>
+      <text x="345" y="0" text-anchor="end" class="p7-2 pct-counting">55%</text>
+      <text x="345" y="0" text-anchor="end" class="p7-3 pct-counting">82%</text>
+      <text x="345" y="0" text-anchor="end" class="p7-4 pct-counting">95%</text>
+      <text x="345" y="0" text-anchor="end" class="p7-5 pct-done">100%</text>
+      <text x="360" y="0" fill="#30363d">|</text>
+      <text x="375" y="0" fill="#c9d1d9">Rust &#8226; C++20 &#8226; TypeScript &#8226; JS</text>
+    </g>
+
+    <!-- Row 8: Bottom prompt typing 'clear' -->
+    <g class="bot-prompt" transform="translate(0, 214)">
+      <text x="0" y="0">
+        <tspan fill="#57ab5a" font-weight="600">waters1ze@compiler</tspan><tspan fill="#6e7681">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#c9d1d9">$ </tspan>
+        <tspan fill="#e6edf3" class="c-c">c</tspan><tspan fill="#e6edf3" class="c-l">l</tspan><tspan fill="#e6edf3" class="c-e">e</tspan><tspan fill="#e6edf3" class="c-a">a</tspan><tspan fill="#e6edf3" class="c-r">r</tspan>
+      </text>
+      <!-- Pre-typing cursor -->
+      <g class="cur-bot-pre">
+        <rect x="152" y="-12" width="7.5" height="15" fill="#d29922" class="blink" />
+      </g>
+      <!-- Post-typing cursor right after 'clear' -->
+      <g class="cur-bot-post">
+        <rect x="195" y="-12" width="7.5" height="15" fill="#d29922" class="blink" />
+      </g>
+    </g>
+
+    <!-- Cleared Screen State: Reset to clean prompt at top -->
+    <g class="cleared">
+      <text x="0" y="0">
+        <tspan fill="#57ab5a" font-weight="600">waters1ze@compiler</tspan><tspan fill="#6e7681">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#c9d1d9">$ </tspan>
+      </text>
+      <rect x="152" y="-12" width="7.5" height="15" fill="#d29922" class="blink" />
+    </g>
+
+  </g>
+</svg>
